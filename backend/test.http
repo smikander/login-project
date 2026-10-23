@@ -1,0 +1,40 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "email": "testuser@example.com",
+    "password": "testpassword123"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "testuser@example.com",
+    "password": "testpassword123"
+}
+
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": ""
+}
+
+###
+
+POST http://localhost:3000/forgot-password
+Content-Type: application/json
+
+{
+    "email": "koira@dogs.net"
+}
+
+###
